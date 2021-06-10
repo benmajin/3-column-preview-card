@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;    
+}
+.container {
+    margin: 25px 0 0 20px;
+}
+.card {
+    width: 327px;
+    border-radius: 8px;
+    background-color: #E28625
+}
+
+.card:nth-child(2n) {
+    background-color: #006971;
+}
+
+.card:nth-child(3n) {
+    background-color: #004140;
+    border-radius: 0  0 8px 8px; 
+}
+
+.card-icon {
+    padding:48px 0 0 49px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card-header {
+    padding: 25px 0 0 49px;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    color:#F2F2F2;
+}
+
+.card-content {
+    padding: 25px 50px 0 49px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #ffff;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+button {
+    margin: 25px 0 48px 49px;
+    border: none;
+    background-color:#ffff ;
+    color: #E28625;
+    padding:11px 31px 12px 31px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#card-button-suv {
+    color:#006971 ;
+}
+
+#card-button-luxury {
+    color:#004140 ;
+}
+
+@media (min-width:376px) {
+    .container {
+        display: flex;
+    }
+
+    button {
+        margin-top: 100px;
+    }
+
+    #card-button-suv:hover,#card-button-luxury:hover, button:hover {
+        background-color: transparent;
+        color: #ffff;
+        border: 2px solid #ffff;
+    }
+
+    .card-content {
+        padding: 25px 70px 0 49px; 
+    }
+
+    .card:nth-child(2n) {
+       position: relative;
+       right: 10px;
+    }
+    
+    .card:nth-child(3n) {
+        position: relative;
+        right: 20px; 
+    }
+}
